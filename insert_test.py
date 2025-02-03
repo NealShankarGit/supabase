@@ -14,4 +14,3 @@ print("Initial insert response:", response.data)
 if not response.data:
     response = client.table("test3").select("*").eq("name", "Example").execute()
     print("Select response after insert:", response.data)
-
